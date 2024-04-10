@@ -17,6 +17,13 @@
 - **Add**: `a.push_back(1)` append 10 at the end of vector.
 - **Insert:**
 - **Sort:** sort(a.begin(), a.end())
+- **QuickSelect/QuickSort:** use `nth_element()` or `partial_sort()` to sort upto "k" elements
+  ```
+  partial_sort(points.begin(), points.begin() + K, points.end(), [](vector<int>& p, vector<int>& q) {
+  return p[0] * p[0] + p[1] * p[1] < q[0] * q[0] + q[1] * q[1];
+  });
+  return vector<vector<int>>(points.begin(), points.begin() + K);
+  ```
 ---
 #### Pair
 - `Pair<int, int> pair; // Declaration`
