@@ -25,3 +25,8 @@ mid_col = index % n_cols
 ## Diagonal properties
 - diagonal has r == c so (r-c) will be same for all diagonals (top left to bottom right)
 - anti diagonal has (r+c) to be constant so that can be checked (top right to bottom left)
+
+## Tree or Heap properties
+- if we number the nodes in a BT or arrange them in heap array the indexing will be  
+`left_child = 2 * parent_idx + 1`  
+`right_child = 2 * parent_idx + 2`
