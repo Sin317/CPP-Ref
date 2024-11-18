@@ -30,3 +30,6 @@ mid_col = index % n_cols
 - if we number the nodes in a BT or arrange them in heap array the indexing will be  
 `left_child = 2 * parent_idx + 1`  
 `right_child = 2 * parent_idx + 2`
+
+# Trees
+- Complete tree iff no empty node before complete nodes OR numbering of node < total_nodes_of_tree (LC 958)
