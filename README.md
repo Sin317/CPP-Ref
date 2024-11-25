@@ -33,3 +33,24 @@ mid_col = index % n_cols
 
 # Trees
 - Complete tree iff no empty node before complete nodes OR numbering of node < total_nodes_of_tree (LC 958)
+
+# Graph Traversal
+
+## BFS
+- When to use level wise popping vs simple popping?
+```
+In shortest path problems specifically:
+
+Level size IS needed when:
+
+- You need to track distance/steps (like in the Knight moves problem)
+- You need to increment some count per level
+- You need to process all nodes at current distance before moving to next
+Eg: Level order traversal of tree, RHS View of Tree, Shortest Distance
+
+Simple queue is fine when:
+
+- You're just looking for first occurrence/path
+- You're maintaining distance in the queue items themselves (Imp point to note for shortest distance problems)
+- You have a visited set handling distance implicitly
+```
