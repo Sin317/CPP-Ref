@@ -54,3 +54,12 @@ Simple queue is fine when:
 - You're maintaining distance in the queue items themselves (Imp point to note for shortest distance problems)
 - You have a visited set handling distance implicitly
 ```
+
+# Bitwise operations
+- xor with itself will be 0
+- In the binary representation, the least significant 1-bit in n always corresponds to a 0-bit in n−1. Therefore, anding the two numbers n and n−1 always flips the least significant 1-bit in n to 0, and keeps all other bits the same.
+- fun gimmicks:
+ ```
+x // 2 can be written as x >> 1
+x % 2 can be written as x & 1
+```
